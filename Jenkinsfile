@@ -1,10 +1,6 @@
 pipeline {
-agent {
-docker {
-image 'node:20.10.0-alpine3.18' // Imagen de Docker
-args '-p 3000:3000' // Puertos
-}
-}
+agent any
+  
 stages {
 stage('Build') {
 steps {
