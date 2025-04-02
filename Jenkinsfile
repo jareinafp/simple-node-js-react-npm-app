@@ -2,6 +2,7 @@ pipeline {
     agent {
         docker {
             image 'node:16-alpine' // Usa una imagen Docker con Node.js
+            args '-p 3000:3000' //puertos
         }
     }
     stages {
